@@ -1,3 +1,4 @@
+
 /*
 public class ListNode {
     int val;
@@ -16,21 +17,24 @@ public class Solution {
         if (k == 0 || head == null) {
             return null;
         }
+
         int counter = 1;
         ListNode first = head;
         ListNode last = head;
          
-        while(counter++ <= k){
+        while (counter++ <= k) {
             
             if(last == null) {
                 return null;
             }
-             last = last.next;
+            last = last.next;
         }
-        while(last != null){
+
+        while (last != null) {
             first = first.next;
             last = last.next;
         }
+
         return first;
     }
 }

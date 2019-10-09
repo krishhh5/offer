@@ -16,16 +16,16 @@ public class Solution {
        
         ArrayList<Integer> list = new ArrayList<Integer>();
          
-        if(listNode!=null){
+        if (listNode != null) {
            ListNode p = listNode;
   
-            while(p!=null){
+            while (p != null) {
                 list.add(p.val);
                 p = p.next;
             }         
         }
         ArrayList<Integer> a = new ArrayList<>();
-     Collections.reverse(list);
+        Collections.reverse(list);
         return list;
      
     }
