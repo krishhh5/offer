@@ -9,7 +9,7 @@ public class ListNode {
 }*/
 public class Solution {
 	
-    public ListNode Merge(ListNode list1,ListNode list2) {
+    public ListNode Merge(ListNode list1, ListNode list2) {
         if (list1 == null) {
             return list2;
         }
@@ -22,11 +22,11 @@ public class Solution {
 		
         if (list1.val < list2.val) {
             pList = list1;
-            pList.next = Merge (list1.next, list2);
+            pList.next = Merge(list1.next, list2);
             
         } else {
             pList = list2;
-            pList.next = Merge(list1,list2.next);
+            pList.next = Merge(list1, list2.next);
         }
 		
         return pList;

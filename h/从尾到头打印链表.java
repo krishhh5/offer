@@ -27,6 +27,5 @@ public class Solution {
         ArrayList<Integer> a = new ArrayList<>();
         Collections.reverse(list);
         return list;
-     
     }
 }

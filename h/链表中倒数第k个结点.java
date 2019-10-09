@@ -13,7 +13,7 @@ public class ListNode {
 则前指针所在位置就是倒数第k个节点
 */
 public class Solution {
-    public ListNode FindKthToTail(ListNode head,int k) {
+    public ListNode FindKthToTail(ListNode head, int k) {
         if (k == 0 || head == null) {
             return null;
         }
@@ -24,7 +24,7 @@ public class Solution {
          
         while (counter++ <= k) {
             
-            if(last == null) {
+            if (last == null) {
                 return null;
             }
             last = last.next;

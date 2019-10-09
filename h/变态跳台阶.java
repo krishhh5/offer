@@ -9,6 +9,6 @@ public class Solution {
             return target;
         }
          
-        return JumpFloorII( target - 1 ) * 2;
+        return JumpFloorII(target - 1) * 2;
     }
 }

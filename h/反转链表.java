@@ -28,8 +28,7 @@ public class Solution {
         ListNode curNode = head;
         ListNode nextNode = null;
          
-        while(curNode !=null) {
-          //  preNode = cruNode;
+        while (curNode != null) {
             nextNode = curNode.next;
             //到末尾
             if (nextNode == null) {
