@@ -5,19 +5,19 @@
 */
 public class Solution {
     public void reOrderArray(int [] array) {
-        //记录排好序的奇数的位置
+        // 记录排好序的奇数的位置
         int m = 0;
         for (int i = 0; i < array.length; i++) {   
-            //找到奇数
+            // 找到奇数
             if (array[i] % 2 == 1) {
-                //记录奇数
+                // 记录奇数
                 int temp = array[i];
                 
                 for (int j = i; j > m; j--) {
-                    //将奇数之前的所有元素往后移一个位置
+                    // 将奇数之前的所有元素往后移一个位置
                     array[j] = array[j - 1];
                 }
-                //将奇数放到array[m]位置
+                // 将奇数放到array[m]位置
                 array[m++] = temp;
             }
         }
