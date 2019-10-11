@@ -12,17 +12,17 @@ public class ListNode {
 }*/
 public class Solution {
     public ListNode ReverseList(ListNode head) {
-        //空表
+        // 空表
         if (head == null) {
             return null;
         }
          
-        //只有一个节点
+        // 只有一个节点
         if (head.next == null) {
             return head;
         }
          
-        //心得与头节点
+        // 心得与头节点
         ListNode newHead = null;
         ListNode preNode = null;
         ListNode curNode = head;
@@ -30,7 +30,7 @@ public class Solution {
          
         while (curNode != null) {
             nextNode = curNode.next;
-            //到末尾
+            // 到末尾
             if (nextNode == null) {
                 newHead = curNode;
             }
