@@ -8,13 +8,15 @@ public class Solution {
         if(str==null||str.length()==0){
             return -1;
         }
+        char s = 'z'; 
+        int length =(int)s + 1;
         char [] c = str.toCharArray();
-        int [] counter = new int[124];
+        int [] counter = new int[length];
         for (char ch : c) {
             counter[ch]++;
         }
         
-        for (int i = 0; i < 124; i++) {
+        for (int i = 0; i < length; i++) {
             if (counter[c[i]] == 1) {
                 return i;
             }
