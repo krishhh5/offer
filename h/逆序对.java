@@ -30,19 +30,22 @@ public class Solution {
         if (start >= end) {
             return;
         }
-        int mid = (start+end) >> 1;
+        int mid = (start + end) >> 1;
         mergeSort(array, start, mid, tmpArr);
-        mergeSort(array, mid+1, end, tmpArr);
-        merge(array, start, mid, end, tmpArr);//合并
+        mergeSort(array, mid + 1, end, tmpArr);
+        //合并
+        merge(array, start, mid, end, tmpArr);
     }
     private void merge(int[] array, int start, int mid, int end, int[] tmpArr) {
-        int tmpIndex = start;//tmpArr的下标
-        int start2 = mid + 1;//第二个归并段
+       //tmpArr的下标
+        int tmpIndex = start;
+        //第二个归并段
+        int start2 = mid + 1;
         int i = start;
         while (start <= mid && start2 <= end) {
             if (array[start] > array[start2]) {
                 tmpArr[tmpIndex++] = array[start++];
-                count = (count + end - start2 + 1) % 1000000007;//逆序对
+                count = (count + end - start2 + 1) % 1000000007;
             } else {
                 tmpArr[tmpIndex++] = array[start2++];
             }
