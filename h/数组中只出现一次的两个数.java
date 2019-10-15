@@ -15,11 +15,11 @@ public class Solution {
         for (int i = 0; i < array.length; i++) {
             xorResult ^= array[i];
         }
-        while ((xorResult &flag) == 0) {
+        while ((xorResult & flag) == 0) {
             flag <<= 1;
         }
         
-        for (int i = 0; i <array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if ((flag & array[i]) == 0) {
                 num2[0] ^= array[i];
             } else {
