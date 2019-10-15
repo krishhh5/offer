@@ -16,7 +16,7 @@ public class Solution {
         int start = 0;
         int end = array.length;
         while (start < end) {
-            int mid = start + (end + start) >> 1;
+            int mid = start + (end - start) >> 1;
             if(array[mid] >= k) {
                 end = mid;
             } else {

@@ -30,7 +30,7 @@ public class Solution {
         if (start >= end) {
             return;
         }
-        int mid = (start + end) >> 1;
+        int mid = start + (end - start) >> 1;
         mergeSort(array, start, mid, tmpArr);
         mergeSort(array, mid + 1, end, tmpArr);
         //合并
