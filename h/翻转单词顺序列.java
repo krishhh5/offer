@@ -10,7 +10,7 @@
 import java.util.Stack;
 public class Solution {
     public String ReverseSentence(String str) {
-         int len = str.length();
+        int len = str.length();
         if (null == str) {
             return null;
         }
