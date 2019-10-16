@@ -5,7 +5,7 @@
 */
 import java.util.ArrayList;
 public class Solution {
-    public ArrayList<Integer> FindNumbersWithSum(int [] array,int sum) {
+    public ArrayList<Integer> FindNumbersWithSum(int [] array, int sum) {
         int first = 0;
         int last = array.length - 1;
         ArrayList<Integer> list = new ArrayList<Integer>();

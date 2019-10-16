@@ -10,11 +10,11 @@
 import java.util.Stack;
 public class Solution {
     public String ReverseSentence(String str) {
-         int len=str.length();
+         int len = str.length();
         if (null == str) {
             return null;
         }
-         str=" "+str;
+         str = " " + str;
         String str_rever = "";
         Stack<Character> stack = new Stack<>();
         for (int i = str.length() - 1; i >= 0; i--) {

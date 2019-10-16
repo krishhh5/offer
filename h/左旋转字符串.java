@@ -6,15 +6,13 @@
 即“XYZdefabc”。是不是很简单？OK，搞定它！
 */
 public class Solution {
-    public String LeftRotateString(String str,int n) {
+    public String LeftRotateString(String str, int n) {
         int length = str.length();
         if (length < 1) {
             return "";
         }
          
         n %= length;
-       return  str.substring(n, length) + str.substring(0, n) ;
-      
-        
+       return  str.substring(n, length) + str.substring(0, n) ;  
     }
 }
