@@ -25,7 +25,7 @@ public class Solution {
         while (list.size() > 1) {
 			removeIndex = (removeIndex  + m - 1) % list.size();
 			list.remove(removeIndex);
-		}
+        }
         return list.get(0);
     }
 }
