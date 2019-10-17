@@ -16,14 +16,14 @@ public class Solution {
     //                     otherwise false
     public boolean duplicate(int numbers[], int length, int [] duplication) {
   
-        if(length <= 0) {
+        if (length <= 0) {
             return false;
         }
 
         boolean [] arr = new boolean[length];
 
-        for(int i = 0; i < length; i++) {
-            if(arr[numbers[i]] == true) {
+        for (int i = 0; i < length; i++) {
+            if (arr[numbers[i]] == true) {
                 duplication[0] = numbers[i];
                 return true;
             }
