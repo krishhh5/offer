@@ -5,11 +5,12 @@
 */
 public class Solution {
     String str = "";
-    int[] count = new int[256];
+    int length = 'z';
+    int[] count = new int[length];
     //Insert one char from stringstream
     public void Insert(char ch)
     {
-        if (ch >= 'z') {
+        if (ch >= length) {
             return ;
         }
         str += ch;
