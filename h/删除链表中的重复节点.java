@@ -26,7 +26,7 @@ public class Solution {
             } else {
                 preNode = curNode;
             }
-            node = node.next;
+            curNode = curNode.next;
         }
         return pHead;
     }
