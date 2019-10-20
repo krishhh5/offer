@@ -17,7 +17,7 @@ public class Solution {
         count[ch]++;
         
     }
-  //return the first appearence once char in current stringstream
+
     public char FirstAppearingOnce()
     {
         for (char c : str.toCharArray()) {
