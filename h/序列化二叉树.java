@@ -31,7 +31,7 @@ public class Solution {
             sb.append("#,");
             return sb.toString();
         }
-        sb.append(root.val+",");
+        sb.append(root.val + ",");
         sb.append(Serialize(root.left));
         sb.append(Serialize(root.right));
         return sb.toString();
