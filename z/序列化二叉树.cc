@@ -16,9 +16,9 @@ class Solution {
   TreeNode* deserialize_helper(stringstream& ss) {
     string str;
     getline(ss, str, ',');
-    if (str == "N")
+    if (str == "N") {
       return NULL;
-    else {
+    } else {
       TreeNode* node = new TreeNode(stoi(str));
       node->left = deserialize_helper(ss);
       node->right = deserialize_helper(ss);
